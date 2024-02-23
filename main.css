@@ -1,0 +1,311 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+/* Navigation Styles */
+nav {
+    background: #006a4e; /* Deep green resembling tea leaves */
+    color: #fff;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.active {
+    transition: 0.5s ease;
+    color: #ffffff; /* A distinct color for the active page */
+    background-color: #159c71; /* A subtle background highlight */
+    border-radius: 15px;
+    padding: 7px;
+}
+/* Section Styling */
+section {
+    padding: 20px;
+    margin: 20px 0;
+}
+
+#featured-teas {
+    background: #e9f5f0; /* Light green for a subtle tea flavor */
+    border-radius: 8px;
+}
+
+/* Footer Styles */
+footer {
+    background: #003823;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: static;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+}
+
+/* Featured Teas section of index.html */
+
+.tea-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.tea {
+    position: relative;
+    width: 100px;
+    height: 150px;
+}
+
+.cup {
+    position: absolute;
+    bottom: 0; 
+    width: 100%;
+    height: 50px;
+    background-color: transparent;
+    border: 2px solid #333;
+    border-radius: 0 0 10px 10px;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+/* Animation */
+@keyframes pour {
+    from {
+        height: 0;
+    }
+    to {
+        height: 50px;
+    }
+}
+
+.pour.black-tea {
+    animation: pour 2s forwards;
+    background-color: rgba(0, 0, 0, 0.6); /* Translucent black */
+}
+
+.pour.oolong-tea {
+    animation: pour 2s forwards;
+    background-color: rgba(166, 104, 41, 0.6); /* Translucent brown */
+}
+
+.pour.green-tea {
+    animation: pour 2s forwards;
+    background-color: rgba(183, 223, 185, 0.6); /* Translucent green */
+}
+
+.pour.white-tea {
+    animation: pour 2s forwards;
+    background-color: rgba(255, 255, 240, 0.6); /* Off white */
+}
+/* Featured Teas section of index.html ^*/
+
+
+#clear-teas {
+    display: flex;
+    float: right;
+    text-align: center;
+}
+
+button {
+  background-color: #1bdb81;
+  border: 1px solid #f8f9fa;
+  border-radius: 4px;
+  color: #3c4043;
+  cursor: pointer;
+  font-family: arial,sans-serif;
+  font-size: 14px;
+  height: 36px;
+  line-height: 27px;
+  min-width: 54px;
+  padding: 0 16px;
+  text-align: center;
+  user-select: none;
+  touch-action: manipulation;
+  white-space: pre;
+
+
+  border-color: #7be7b4;
+  box-shadow: rgba(0, 0, 0, .1) 0 1px 1px;
+  color: #202124;
+
+  border-color: #42f4a1;
+  outline: none;
+
+}
+
+.tea-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.tea {
+    position: relative;
+    text-align: center; /* Centers the tea name above the cup */
+    margin: 0 10px; /* Spacing between the teas */
+}
+
+/* Tea bag CSS */
+.tea-bag-container {
+    text-align: center; /* Centers the tea bag horizontally */
+    margin-top: 20px; /* Spacing from the section above */
+    background-color: #f4f4f4;
+}
+
+.tea-bag {
+    display: inline-block;
+    position: relative; /* Allows absolute positioning within this container */
+}
+
+.tag {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: #ffe4b5; /* Light brown color for the tag */
+    margin-top: 10px;
+    margin-bottom: -8px;
+}
+
+.string {
+    display: block;
+    width: 2px;
+    height: 45px;
+    margin: 0 auto; /* Centers the string */
+    background-color: #000; /* Black color for the string */
+}
+
+.bag {
+    display: inline-block;
+    width: 50px;
+    height: 60px;
+    background-color: #f5f5dc; /* Beige color for the tea bag */
+    margin-top: -10px; /* Overlap the string */
+    box-shadow: inset 0 0 0 2px #000; /* Border effect using shadow */
+    position: relative;
+}
+
+.bag::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 2px;
+    height: 10px;
+    background-color: #000;
+    transform: translateX(-50%);
+}
+/* Tea Bag CSS ^ */
+
+.teaTypes {
+    margin-left: 15px;
+    margin-top: 5px;
+}
+
+.center, .responsive-img {
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+}
+
+.brew-method {
+    display: flex;
+    /* align-items: center; Aligns the image and text vertically */
+    margin-bottom: 30px; /* Space between each brewing method */
+}
+
+.brew-image {
+   border-radius: 19px;
+}
+
+.brew {
+    padding-left: 10px;
+}
+
+.brew-method h2 {
+    padding-left: 15px;
+}
+
+.brew-method {
+    display: flex;
+    align-items: center; /* Aligns the image and text vertically */
+    margin-bottom: 30px; /* Space between each brewing method */
+}
+
+.brew-method img {
+    /* max-width: 20%; Adjust the width as necessary */
+    /* height: auto; Maintain aspect ratio */
+    margin-right: 20px; /* Space between the image and the text */
+    border-radius: 19px;
+}
+
+.brew-method h2 p {
+    text-align: left; /* Aligns the text to the left */
+    margin-right: 10px; /* Space between the text and the right boundary */
+}
+
+.brew-method h2,
+.brew-method p {
+    align-self: center; /* This will center-align the text vertically */
+    margin: 0; /* This resets any default margins */
+}
+
+.brew-method {
+    padding: 20px; /* Adjust as needed */
+}
+
+.form-group {
+    margin-bottom: 15px; /* Add space below each form group */
+}
+
+.form-group label,
+.form-group input,
+.form-group textarea {
+    display: block; /* Makes label and input stack vertically */
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%; /* Makes input and textarea take full width */
+    padding: 8px; /* Add padding for aesthetics */
+    margin-top: 5px; /* Add space between label and input/textarea */
+}
+
+button[type="submit"] {
+    margin-top: 15px; /* Add space above the button */
+}
+
+
+.absolute{
+    position: absolute;
+}
