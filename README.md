@@ -41,7 +41,9 @@ Contributions are what make the open-source community such an amazing place to l
 fdembele@u.rochester.edu
 
 ## miscellaneous
-Project Link: https://github.com/fatima-d09/tea-enthusiasts
+Homepage of the project 👀 
+
+![tea](https://github.com/user-attachments/assets/a90d0062-d5b1-4b16-b176-794bcfed6bb7)
 
 ~ This project was a school project ~
 
